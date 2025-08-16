@@ -1,0 +1,158 @@
+# LaTeX temporary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.idx
+*.ind
+*.ilg
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.ist
+*.loa
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# BibTeX
+*.bib.bak
+*.sav
+
+# LaTeX Beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# LaTeX generated files
+*.dvi
+*.ps
+*.eps
+*.pdf (uncomment if you don't want to track the final PDF)
+
+# Editor temporary files
+*~
+*.swp
+*.swo
+*#
+.#*
+\#*#
+.#*#
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+
+# Build directories
+build/
+output/
+temp/
+
+# Package manager files
+*.sty.bak
+*.cls.bak
+
+# LaTeXmk
+.latexmk/
+
+# Overleaf
+.overleaf/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# LaTeX specific
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.synctex.gz(busy2)
+
+# Bibliography
+*.bbl
+*.blg
+*.bib.bak
+
+# Index
+*.idx
+*.ind
+*.ilg
+
+# Glossary
+*.glo
+*.gls
+*.glg
+
+# Acronyms
+*.acn
+*.acr
+*.alg
+
+# List of figures/tables
+*.lof
+*.lot
+
+# Table of contents
+*.toc
+
+# Cross-references
+*.xdy
+*.out
+
+# LaTeXmk
+.latexmk/
+
+# Overleaf
+.overleaf/
+
+# Temporary files from editors
+*~
+*.swp
+*.swo
+*#
+.#*
+\#*#
+.#*#
