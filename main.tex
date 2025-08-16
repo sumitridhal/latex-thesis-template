@@ -1,0 +1,135 @@
+\documentclass[12pt]{report}
+
+% Essential packages for thesis
+\usepackage{amssymb,amsmath,geometry,amsthm,graphicx,gensymb}
+\usepackage{mathpazo}
+\usepackage{float}
+\usepackage{csquotes}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{textgreek}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber, style=authoryear, sorting=nyt]{biblatex}
+\usepackage[dvipsnames]{xcolor}
+
+% Package configurations
+\sisetup{per-mode=symbol,detect-all}
+
+% Bibliography
+\addbibresource{reference.bib}
+
+% Page setup
+\geometry{
+    paper=a4paper,
+    top=2.5cm, 
+    bottom=2.5cm, 
+    left=2.25cm, 
+    right=2.25cm, 
+    headheight=14pt,
+    footskip=1.00cm, 
+    headsep=1.2cm, 
+}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+
+% Theorem environments
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{eg}[thm]{Example}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{qn}{Question}[chapter]
+\newtheorem{prm}{Problem}[chapter]
+
+% Mathematical commands
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Rd}{\R^d}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Zd}{\mathbb{Z}^{d}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\E}{\mathbb{E}}
+
+% Operator commands
+\newcommand{\norm}[1]{\|#1\|}
+\newcommand{\inorm}[1]{\|#1\|_\infty}
+\newcommand{\gnorm}[1]{\|#1\|_1}
+
+% Proof environment - using standard amsthm
+
+\begin{document}
+
+% Title page
+\pagenumbering{roman}
+\thispagestyle{empty}
+\begin{center}
+    \vspace*{1cm}
+    {\textbf{\LARGE [Your Thesis Title Here]}}\\
+    
+    \vspace*{1cm}
+    {\large A thesis submitted in partial fulfillment of\\
+    the requirements for the degree of}\\
+    
+    \vspace*{0.5cm}
+    {\large [Your Degree]}\\
+    
+    \vspace*{0.5cm}
+    {\large by}\\
+    
+    \vspace*{0.5cm}
+    {\textbf{\Large [Your Full Name]}}\\
+    \vspace*{0.25cm}
+    {\large ([Your Student ID])}\\
+    
+    \vspace*{1cm}
+    {\large Under the guidance of}\\
+    \vspace*{0.25cm}
+    {\textbf{\Large [Your Supervisor's Name]}}\\
+    
+    \vspace*{1.75cm}
+    
+    \includegraphics[width=0.3\textwidth]{logo.png}
+    
+    \vspace*{0.75cm}
+    {\textbf{\large [Your Department Name]}}\\ \vspace*{0.2cm}
+    {\textbf{\large [Your University Name]}}\\ \vspace*{0.2cm}
+    {\large [Month, Year]}
+    
+\end{center}
+
+% Abstract
+\newpage
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+[Your abstract goes here. This should be a concise summary of your research, typically 200-300 words. Include the main objectives, methodology, key findings, and conclusions of your work.]
+
+% Table of contents
+\newpage
+\tableofcontents
+\newpage
+
+% Main content
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+% Include chapters
+\input{chapters/1/1}
+\input{chapters/2/2}
+
+% Bibliography
+\printbibliography[title=References]
+
+\end{document}
