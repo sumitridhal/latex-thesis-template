@@ -1,22 +1,27 @@
 \documentclass[12pt]{report}
 
 % Essential packages for thesis
-\usepackage{amssymb,amsmath,geometry,amsthm,graphicx,gensymb}
+\usepackage{amssymb,amsmath,geometry,amsthm,graphicx}
 \usepackage{mathpazo}
 \usepackage{float}
-\usepackage{csquotes}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
 \usepackage{booktabs}
 \usepackage{siunitx}
 \usepackage{textgreek}
 \usepackage{hyperref}
-\usepackage{enumitem}
 \usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+
+% Global list formatting configuration
+\setlist[enumerate]{leftmargin=2em, itemsep=0.5em, parsep=0.5em}
+\setlist[itemize]{leftmargin=2em, itemsep=0.5em, parsep=0.5em}
 \usepackage[backend=biber, style=authoryear, sorting=nyt]{biblatex}
 \usepackage[dvipsnames]{xcolor}
 
 % Package configurations
-\sisetup{per-mode=symbol,detect-all}
+\sisetup{per-mode=symbol,mode=match,propagate-math-font=true,reset-math-version=false,reset-text-family=false,reset-text-series=false,reset-text-shape=false,text-family-to-math=true,text-series-to-math=true}
 
 % Bibliography
 \addbibresource{reference.bib}
